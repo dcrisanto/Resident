@@ -1,0 +1,27 @@
+input.form-control {
+    background: #F1F5F5;
+    height: 56px;
+    align-content: center;
+}
+
+.border-bottom {
+    border-bottom: 1px solid rgba(0, 0, 0, .125);
+    padding: 0 0 19px;
+}
+
+.btn-cancel {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 16px;
+    font-family: Roboto;
+    font-style: normal;
+    letter-spacing: 0.4px;
+    color: #7E8685;
+    cursor: pointer;
+    background: none;
+    border: 0;
+}
+
+.input-img {
+    background: url('../../../assets/images/upload-file.png') no-repeat right top;
+}

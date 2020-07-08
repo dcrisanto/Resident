@@ -1,0 +1,63 @@
+<section id="wrapper">
+    <div class="login-register">
+        <div class="login-box">
+            <div class="card-body login-color">
+                <form #f="ngForm" ngNativeValidate class="form-horizontal form-material" id="loginform" action="index.html" (ngSubmit)="login(f)">
+                    <h3 class="box-title login-letter m-b-20 position">RESIDENT</h3>
+                    <div class="position">
+                        <img src="../assets/images/logo.png" class="login-logo" />
+                    </div>
+                    <br/>
+                    <div class="card-body card">
+                        <div class="form-group ">
+                            <div class="col-xs-12">
+                                <div class="input-group">
+                                    <div class="input-group-addon icon">
+                                        <img src="../assets/images/user.png" class="icon">
+                                    </div>
+                                    <input ngModel name="email" type="text" required class="form-control" placeholder="Usuario">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <div class="col-xs-12">
+                                <div class="input-group">
+                                    <div class="input-group-addon icon">
+                                        <img src="../../assets/images/password.png" class="icon">
+                                    </div>
+                                    <input ngModel name="password" type="password" class="form-control" placeholder="Contraseña">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="form-group text-center">
+                            <div class="col-xs-12 p-b-20">
+                                <button class="btn btn-block  login-color" type="submit">Iniciar sesión</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <!--row col-md-12-->
+                        <div class="row">
+                            <div class="col-md-6 checkbox checkbox-info pull-left p-t-0">
+                                <input ngModel name="remember" id="checkbox-signup" type="checkbox" class="filled-in chk-col-light-blue">
+                                <label class="text-register" for="checkbox-signup"> Recuérdame </label>
+                            </div>
+
+                            <a href="javascript:void(0)" id="to-recover" class="text-register float-right">¿Olvidaste tu contraseña?</a>
+
+                        </div>
+                    </div>
+
+                    <div class="form-group m-b-0">
+                        <div class="col-md-12 text-center">
+                            <a [routerLink]="['/register']" class="text-register"><b>Registrarme</b></a>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>

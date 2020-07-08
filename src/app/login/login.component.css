@@ -1,0 +1,142 @@
+/*
+Template Name: Admin pro Admin
+Author: Wrappixel
+Email: niravjoshi87@gmail.com
+File: scss
+*/
+
+
+/*
+Template Name: Admin Pro Admin
+Author: Wrappixel
+Email: niravjoshi87@gmail.com
+File: scss
+*/
+
+
+/*Theme Colors*/
+
+
+/*bootstrap Color*/
+
+
+/*Light colors*/
+
+
+/*Normal Color*/
+
+
+/*Extra Variable*/
+
+
+/*******************
+Login register and recover password Page
+******************/
+
+.login-register {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    height: 100%;
+    width: 100%;
+    /*padding: 10% 0;*/
+    position: fixed;
+    background: #00695C;
+}
+
+.login-box {
+    width: 400px;
+    margin: 0 auto;
+}
+
+.login-box .footer {
+    width: 100%;
+    left: 0px;
+    right: 0px;
+}
+
+.login-box .social {
+    display: block;
+    margin-bottom: 30px;
+}
+
+#recoverform {
+    display: none;
+}
+
+.login-sidebar {
+    padding: 0px;
+    margin-top: 0px;
+}
+
+.login-sidebar .login-box {
+    right: 0px;
+    position: absolute;
+    height: 100%;
+}
+
+.login-logo {
+    /*position: absolute;*/
+    left: 0%;
+    right: 0%;
+    top: 0%;
+    bottom: 0%;
+    position: relative;
+    width: 148px;
+    height: 123px;
+}
+
+.login-color {
+    background: #00695C;
+    color: #FFFFFF;
+}
+
+.login-letter {
+    font-family: Overpass;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 24px;
+    line-height: 37px;
+    color: #FFFFFF;
+    text-align: center;
+}
+
+.position {
+    text-align: center;
+}
+
+.text-register {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 16px;
+    display: flex;
+    letter-spacing: 0.4px;
+    color: #FFFFFF;
+    text-align: center;
+}
+
+input.form-control {
+    background: #F1F5F5;
+    height: 56px;
+}
+
+.color {
+    background: #F1F5F5;
+    height: 56px;
+}
+
+::placeholder {
+    color: #AAB7B5;
+    font-size: 16px;
+    padding: 20px 0px 20px 56px;
+    text-align: left;
+}
+
+.icon {
+    /*position: absolute;
+    padding: 16px 0px 16px 16px;*/
+    background: #F1F5F5;
+    border: none;
+}

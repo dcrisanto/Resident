@@ -1,0 +1,15 @@
+.h56 {
+    height: 56px;
+}
+
+.btn-cancel {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 16px;
+    font-style: normal;
+    letter-spacing: 0.4px;
+    color: #7E8685;
+    cursor: pointer;
+    background: none;
+    border: 0;
+}

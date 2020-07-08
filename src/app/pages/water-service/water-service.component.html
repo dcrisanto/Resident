@@ -1,0 +1,108 @@
+<section id="wrapper">
+    <div class="login-register">
+        <div class="login-box">
+            <div class="card-header">
+                <div class="row text-center">
+                    <div class="col-md-1 col-xs-1">
+                        <i [routerLink]="['/beads']" class="fa fa-angle-left pointer"></i>
+                    </div>
+                    <div class="col-md-10 col-xs-10">
+                        <h2>Servicio de agua</h2>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card-body">
+                <form #f="ngForm" ngNativeValidate class="form-horizontal form-material" (ngSubmit)="dataWaterService(f)">
+                    <h3 class="box-title color-title m-b-20 position-center">Junio 2020</h3>
+                    <div class="position-center">
+                        <img src="../assets/images/measurer.png" />
+                    </div>
+                    <div class="card pt-2">
+                        <div class="form-group">
+                            <div class="col-md-12 col-xs-12">
+                                <div class="input-group">
+                                    <div class="input-group-addon color-input">
+                                        <img src="../assets/images/input-water.png" class="color-input">
+                                    </div>
+                                    <input ngModel="water" name="water" type="number" required class="form-control color-input text-style" placeholder="Consumo en m">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="form-group border-bottom">
+                            <div class="row">
+                                <div class="col-md-2 col-xs-2">
+                                    <img src="../../assets/images/icon-archive.png" class="pl-2">
+                                </div>
+
+                                <div *ngIf="!temporaryImage" class="col-md-6 col-xs-6 pl-2 text-center text-style">
+                                    Adjuntar evidencia
+                                </div>
+                                <div *ngIf="temporaryImage" class="col-md-6 col-xs-6 pl-2 text-center text-style">
+                                    {{this.meterImage.name}}
+                                </div>
+
+                                <div class="col-md-4 col-xs-4 pl-2 pointer float-right">
+                                    <div class="col-md-2">
+                                        <div class="input-group">
+                                            <input (change)="imageSelection($event.target.files[0])" type="file" class="input-img">
+                                            <!--<img src=" ../../assets/images/upload-file.png" type="file" class="pl-2 ">-->
+                                        </div>
+                                    </div>
+                                    <!--<img src="../../assets/images/delete.png " class="pl-2 ">-->
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <div class="row">
+                                <div class="col-md-6 col-xs-6">
+                                    <button (click)="uploadingImage()" type="submit" class="btn waves-effect waves-light color-buttons float-left">
+                                            Guardar
+                                    </button>
+                                </div>
+                                <div class="col-md-6 col-xs-6 pl-2">
+                                    <button class="float-right btn-cancel">
+                                        Cancelar
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="form-group border-bottom">
+                            <div class="row">
+                                <div class="col-md-2 col-xs-2">
+                                    <img src="../../assets/images/archive.png" class="pl-2">
+                                </div>
+
+                                <div class="col-md-8  col-xs-8 text-center text-style">
+                                    Ver historial de consumo
+                                </div>
+
+                                <div class="col-md-2 col-xs-2 pl-2 pointer">
+                                    <img src=" ../../assets/images/visualize.png " class="pl-2">
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+
+            <footer class="footer text-center pt-2">
+                <div class="form-group row">
+                    <div class="col-md-4 col-xs-4">
+                        <img src="../assets/images/start.png">
+                    </div>
+                    <div class="col-md-4 col-xs-4">
+                        <img src="../assets/images/profile-icon.png">
+                    </div>
+                    <div class="col-md-4 col-xs-4">
+                        <img src="../assets/images/archive.png">
+                    </div>
+                </div>
+            </footer>
+        </div>
+    </div>
+</section>
